@@ -1,0 +1,132 @@
+/* Footer */
+
+.page-footer {
+  background-color: #2f303a;
+  color: $white;
+}
+
+.logo-footer {
+  margin-right: 69px;
+  & .inverse {
+    color: white;
+    &:hover,
+    :focus {
+      color: $accent-color;
+    }
+  }
+}
+
+.address {
+  display: flex;
+  align-content: space-between;
+  margin-bottom: 9px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.contact-item {
+  display: block;
+  color: rgba(255, 255, 255, 0.6);
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  margin-bottom: 9px;
+
+  transition: color $timing-function;
+
+  &:hover,
+  :focus {
+    color: $accent-color;
+  }
+}
+
+.contact-social {
+  margin-right: 94px;
+}
+
+.contact-block {
+  display: flex;
+  align-items: baseline;
+  padding-top: 45px;
+  padding-bottom: 28px;
+}
+
+.social-footer {
+  display: flex;
+  justify-content: space-between;
+
+  & > .social-link {
+    margin-right: 10px;
+
+    &:nth-last-child(-n + 1) {
+      margin-right: 0;
+    }
+  }
+}
+
+.social-icon {
+  &.footer {
+    fill: #ffffff;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  &:hover,
+  :focus {
+    fill: $white;
+    background-color: $accent-color;
+  }
+}
+
+.join {
+  display: block;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.subscribe-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.email {
+  margin-right: 12px;
+  padding-left: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: #2f303a;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+.copyright {
+  width: 1170px;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.4);
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.03em;
+
+  text-align: center;
+
+  padding-top: 18px;
+  padding-bottom: 21px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}

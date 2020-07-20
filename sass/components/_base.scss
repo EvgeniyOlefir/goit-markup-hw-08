@@ -1,0 +1,96 @@
+.page {
+  background-color: $white;
+  color: $primary-text-color;
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.02em;
+}
+
+li {
+  list-style-type: none; /* Убираем маркеры */
+}
+
+a {
+  text-decoration: none; /* Отменяем подчеркивание у ссылки */
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  width: 1200px;
+  /* outline: 2px solid tomato; */
+}
+
+/* Section */
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section.no-padding {
+  padding-top: 0;
+}
+
+.section-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+  color: $primary-text-color;
+
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* Block */
+
+.block-title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  padding-top: 30px;
+  color: $primary-text-color;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.text {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $secondary-text-color;
+}
+
+// Невидимый заголовок футера
+
+.footer-title {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  color: $primary-text-color;
+}

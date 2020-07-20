@@ -1,0 +1,41 @@
+/* Activities */
+
+.activities-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.activities-title {
+  width: 370px;
+  text-align: center;
+  position: relative;
+}
+
+.activities-link {
+  display: inline-block;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  width: 370px;
+  height: 70px;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  color: $white;
+  background-color: rgba(47, 48, 58, 0.8);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-align: center;
+  text-transform: uppercase;
+
+  transition: color $timing-function;
+
+  &:hover,
+  :focus {
+    color: $black;
+  }
+}
