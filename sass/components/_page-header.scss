@@ -5,10 +5,44 @@
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 
-  @media (min-width: $mobile) {
-    width: $mobile;
+  .logo {
+    margin: 0;
   }
+
+  .site-nav {
+    display: none;
+
+    @media screen and (min-width: $mobile) {
+      display: flex;
+      display: flex;
+      margin-left: 85px;
+
+      .item + .item {
+        margin-left: 50px;
+      }
+    }
+  }
+
+  &.main-nav {
+    @media screen and (min-width: $mobile) {
+      display: flex;
+      align-items: center;
+
+      border-bottom: 1px solid #ececec;
+    }
+  }
+
+  .auth-nav {
+    display: none;
+
+    @media screen and (min-width: $mobile) {
+      display: flex;
+      display: flex;
+      margin-left: 85px;
+    }
 }
 
 // // .main-nav {
