@@ -105,6 +105,7 @@ li {
 a {
   text-decoration: none;
   /* Отменяем подчеркивание у ссылки */
+  color: inherit;
 }
 
 img {
@@ -119,12 +120,36 @@ p {
   margin: 0;
 }
 
+button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 0;
+}
+
 .container {
-  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 /* Section */
@@ -216,9 +241,6 @@ p {
   left: 0;
   width: 100%;
   z-index: 10;
-  font-weight: 500;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
   background-color: inherit;
   border-bottom: 1px solid #ececec;
 }
@@ -240,11 +262,11 @@ p {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  color: #000000;
+  color: #212121;
 }
 
 .header__menu-button:focus, .header__menu-button:hover {
-  color: #2196f3;
+  fill: #2196f3;
 }
 
 @media screen and (min-width: 768px) {

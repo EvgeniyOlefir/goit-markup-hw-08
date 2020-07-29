@@ -11,6 +11,8 @@ li {
 
 a {
   text-decoration: none; /* Отменяем подчеркивание у ссылки */
+
+  color: inherit;
 }
 
 img {
@@ -25,12 +27,30 @@ p {
   margin: 0;
 }
 
+button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 0;
+}
+
 .container {
-  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+
+  @include media(mobile) {
+    max-width: $mobile;
+  }
+
+  @include media(tablet) {
+    max-width: $tablet;
+  }
+
+  @include media(desktop) {
+    max-width: $desktop;
+  }
 }
 
 /* Section */

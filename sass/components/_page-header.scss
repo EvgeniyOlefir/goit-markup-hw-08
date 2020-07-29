@@ -4,7 +4,7 @@
   left: 0;
   width: 100%;
   z-index: 10;
-  @include fontProperty($weight: 500, $lh: 1.2, $letter: 0.02em);
+  // @include fontProperty($weight: 500, $lh: 1.2, $letter: 0.02em);
   background-color: inherit;
   border-bottom: 1px solid #ececec;
 
@@ -17,11 +17,11 @@
   // .header__menu-button
   &__menu-button {
     display: inline-flex;
-    color: $black;
+    color: $primary-text-color;
 
     &:focus,
     &:hover {
-      color: $accent-color;
+      fill: $accent-color;
     }
 
     @include media(tablet) {
