@@ -1,7 +1,12 @@
 @import './utils/variables';
-@import './utils/visually-hidden';
-@import './components/link';
 @import './utils/breakpoints';
+@import './utils/placeholders';
+@import './utils/mixins';
+@import './utils/visually-hidden';
+
+//components
+
+@import './components/link';
 @import './components/base';
 @import './components/logo';
 @import './components/page-header';

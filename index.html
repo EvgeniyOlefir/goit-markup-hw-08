@@ -20,28 +20,28 @@
 
     <header class="header">
       <div class="container">
-        <div class="header__body">
+        <nav class="header__nav">
           <a href="./index.html" class="logo">
             <span class="logo-accent">Web </span>Studio
           </a>
-          <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+          <button type="button" class="header__menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
             <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
               <use class="icon-cross" href="./images/symbol-defs.svg#icon-close_40px"></use>
               <use class="icon-menu" href="./images/symbol-defs.svg#icon-menu_40px"></use> 
             </svg>
           </button>
           <div class="header__menu" id="menu-container" data-menu>
-            <nav>
-              <ul class="header__list">
-                <li class="item">
-                  <a href="" class="link current">Студия</a>
-                </li>
-                <li class="item">
-                  <a href="./portfolio.html" class="link">Портфолио</a>
-                </li>
-                <li class="item"><a href="" class="link">Контакты</a></li>
-              </ul>
-            </nav>
+            <ul class="header__menu-list">
+              <li class="header__menu-item">
+                <a href="" class="header__menu-link current">Студия</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="./portfolio.html" class="header__menu-link">Портфолио</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="" class="header__menu-link">Контакты</a>
+              </li>
+            </ul>
             <ul class="header-contacts">
               <li class="item">
                 <a href="mail:info@devstudio.com" class="link">
@@ -62,7 +62,7 @@
             </ul>
           </div>
           
-        </div>
+        </nav>
       </div>
     </header>
 
