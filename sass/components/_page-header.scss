@@ -1,12 +1,34 @@
 /* Site nav */
 
 .header {
-  position: relative;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+
+  background-color: inherit;
+  border-bottom: 1px solid #ececec;
+
+  // .header__body
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 60px;
+  }
 }
 
-.header__body {
-  display: flex;
-}
+// .header__body {
+//   display: flex;
+//   align-items: center;
+//   @media screen and (max-width: 767px) {
+//     height: 60px;
+//   }
+//   @media screen and (min-width: 768px) {
+//     height: 81px;
+//   }
+// }
 
 .menu-button {
   display: inline-flex;
@@ -14,34 +36,63 @@
   padding: 0;
   border: none;
   background-color: transparent;
-}
 
-.menu-button .icon-cross {
-  display: none;
-}
+  &:focus,
+  &:hover {
+    fill: $accent-color;
+  }
 
-.menu-button.is-open .icon-cross {
-  display: block;
-}
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 
-.menu-button.is-open .icon-menu {
-  display: none;
+  & .icon-cross {
+    display: none;
+  }
+
+  &.is-open .icon-cross {
+    display: block;
+  }
+
+  &.is-open .icon-menu {
+    display: none;
+  }
 }
 
 .header__menu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  background-color: #fff;
-  padding: 20px;
-  text-align: center;
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width: 767px) {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 10;
+    padding: 60px 0;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16), 0px 2px 4px rgba(0, 0, 0, 0.08),
+      0px 4px 8px rgba(0, 0, 0, 0.04);
+
+    transform: translateX(100%) scale(0);
+    transform-origin: top;
+    opacity: 0;
+    transition: opacity $timing-function, transform $timing-function;
+  }
 
   &.is-open {
-    display: block;
+    transform: translateX(0) scale(1);
+    opacity: 1;
+  }
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-grow: 1;
   }
 }
+
 // .header {
 //   position: fixed;
 //   left: 0;
