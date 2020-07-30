@@ -445,6 +445,12 @@ button {
   color: #2196f3;
 }
 
+.icon-envelope,
+.icon-phone {
+  margin-right: 10px;
+  fill: #757575;
+}
+
 /* Hero */
 .hero {
   max-width: 1600px;

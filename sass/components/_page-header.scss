@@ -4,7 +4,7 @@
   left: 0;
   width: 100%;
   z-index: 10;
-  // @include fontProperty($weight: 500, $lh: 1.2, $letter: 0.02em);
+
   background-color: inherit;
   border-bottom: 1px solid #ececec;
 
@@ -167,4 +167,10 @@
       color: $accent-color;
     }
   }
+}
+
+.icon-envelope,
+.icon-phone {
+  margin-right: 10px;
+  fill: $secondary-text-color;
 }
