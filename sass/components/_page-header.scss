@@ -27,6 +27,18 @@
     @include media(tablet) {
       display: none;
     }
+
+    & .icon-cross {
+      display: none;
+    }
+
+    &.is-open .icon-cross {
+      display: block;
+    }
+
+    &.is-open .icon-menu {
+      display: none;
+    }
   }
 
   // .header__menu

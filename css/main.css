@@ -275,6 +275,18 @@ button {
   }
 }
 
+.header__menu-button .icon-cross {
+  display: none;
+}
+
+.header__menu-button.is-open .icon-cross {
+  display: block;
+}
+
+.header__menu-button.is-open .icon-menu {
+  display: none;
+}
+
 @media screen and (max-width: 767px) {
   .header__menu {
     position: absolute;
