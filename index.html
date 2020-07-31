@@ -484,9 +484,8 @@
       </section>
     </main>
 
-    <footer class="page-footer">
-      <!--Спрятать заголовок-->
-      <div class="container">
+    
+      <!-- <div class="footer__main container">
         <h2 class="footer-title visually-hidden">Адрес и телефоны</h2>
         <div class="contact-info">
           <div class="contact-block">
@@ -565,7 +564,76 @@
 
         <p class="copyright">2020 | Developed by GoIT Students</p>
       </div>
+    </footer> -->
+        <!-- Footer -->
+    <footer class="footer section">
+      <div class="footer__main container">
+        <div class="footer__adress-block">
+          <div class="logo-footer">
+            <a href="./index.html" class="logo inverse">
+                <span class="logo-accent">Web </span>Studio
+              </a>
+          </div>
+          <address class="footer__adress">
+            <a class="footer__adress-link footer__adress-link--location" href="https://goo.gl/maps/uhBHnLKwiFKhSQN66" target="_blank" rel="noopener nofollow" aria-label="перейти в Google Maps"
+              >г. Киев, пр-т Леси Украинки, 26</a
+            >
+            <a class="footer__adress-link" href="mailto:info@devstudio.com" lang="en" aria-label="Отправить письмо на электронную почту info@devstudio.com">info@devstudio.com</a>
+            <a class="footer__adress-link" href="tel:+380961111111" aria-label="Позвонить по телефону +380961111111">+380961111111</a>
+          </address>
+        </div>
+        <div class="footer__social-block">
+          <b class="request">Присоединяйтесь</b>
+          <ul class="social">
+            <li class="social__item">
+              <a href="" class="social__link">
+                <svg class="icon" width="20px" height="20px">
+                  <use
+                    href="./images/symbol-defs.svg#icon-instagram"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="" class="social__link">
+                <svg class="icon" width="20px" height="20px">
+                  <use
+                    href="./images/symbol-defs.svg#icon-twitter"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="" class="social__link">
+                <svg class="icon" width="20px" height="20px">
+                  <use
+                    href="./images/symbol-defs.svg#icon-facebook"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="" class="social__link">
+                <svg class="icon" width="20px" height="20px">
+                  <use
+                    href="./images/symbol-defs.svg#icon-linkedin"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="subscribe">
+          <b class="request">Подпишитесь на рассылку</b>
+          <form class="subscribe__form" action="#" method="POST" id="subscribe">
+            <input class="subscribe__form-input" id="email" type="email" name="subscribe" placeholder="E-mail" autocomplete="on" required />
+            <label class="visually-hidden" for="email">введите свой адресс электронной почты</label>
+            <button class="button button--subscribe" form="subscribe" type="submit" value="Подписаться">Подписаться</button>
+          </form>
+        </div>
+      </div>
     </footer>
+  
 
     <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
