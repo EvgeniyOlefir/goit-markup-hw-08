@@ -39,3 +39,44 @@
 //     color: $black;
 //   }
 // }
+
+.activities {
+  @include media(desktop, max) {
+    display: none;
+  }
+  // .specialisation__item
+  &__item {
+    position: relative;
+    margin: 15px;
+    width: calc((100% - 90px) / 3);
+  }
+
+  &__list {
+    margin: -15px;
+    @include media(tablet) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+  // .specialisation__item-title
+  &__item-title {
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+    margin: 0;
+    padding: 27px 0;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+
+    background-color: rgba(47, 48, 58, 0.8);
+    color: $white;
+
+    line-height: 1.14;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}

@@ -776,10 +776,6 @@ textarea.input-field:not(:placeholder-shown) {
   }
 }
 
-.section.no-padding {
-  padding-top: 0;
-}
-
 .section-title {
   margin-top: 0;
   margin-bottom: 50px;
@@ -864,6 +860,49 @@ textarea.input-field:not(:placeholder-shown) {
 }
 
 /* Activities */
+@media screen and (max-width: 1200px) {
+  .activities {
+    display: none;
+  }
+}
+
+.activities__item {
+  position: relative;
+  margin: 15px;
+  width: calc((100% - 90px) / 3);
+}
+
+.activities__list {
+  margin: -15px;
+}
+
+@media screen and (min-width: 768px) {
+  .activities__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.activities__item-title {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin: 0;
+  padding: 27px 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  background-color: rgba(47, 48, 58, 0.8);
+  color: #ffffff;
+  line-height: 1.14;
+  text-transform: uppercase;
+  text-align: center;
+}
+
 /* Team */
 /* Clients */
 /* Footer */
